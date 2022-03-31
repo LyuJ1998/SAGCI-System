@@ -118,9 +118,9 @@
 
 <html>
 <head>
-	<title>This is my paper title</title>
+	<title>SAGCI</title>
 	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
-	<meta property="og:title" content="Creative and Descriptive Paper Title." />
+	<meta property="og:title" content="SAGCI-System: Towards Sample-Efficient, Generalizable, Compositional, and Incremental Robot Learning" />
 	<meta property="og:description" content="Paper description." />
 
 	<!-- Get from Google Analytics -->
@@ -134,41 +134,71 @@
 		gtag('config', 'UA-75863369-6');
 	</script>
 </head>
-
+<br><br><br>
 <body>
 	<br>
 	<center>
-		<span style="font-size:36px">Creative and Descriptive Paper Title</span>
+		<span style="font-size:36px">SAGCI-System: Towards Sample-Efficient, Generalizable, Compositional, and Incremental Robot Learning</span>
+		<br>
+		<br>
+		<span style="font-size:24px">ICRA 2022</span>
+		<br>
+		<br>
 		<table align=center width=600px>
 			<table align=center width=600px>
 				<tr>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">First Author</a></span>
+							<span style="font-size:24px"><a href="https://lyuj1998.github.io/">Jun Lv*</a></span>
 						</center>
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Second Author</a></span>
+							<span style="font-size:24px"><a href="https://lyuj1998.github.io/SAGCI-System/">Qiaojun Yu*</a></span>
 						</center>
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Third Author</a></span>
+							<span style="font-size:24px"><a href="https://linsats.github.io/">Lin Shao*</a></span>
 						</center>
 					</td>
 				</tr>
 			</table>
+			<table align=center width=600px>
+				<tr>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="https://lyuj1998.github.io/SAGCI-System/">Wenhai Liu</a></span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="https://lyuj1998.github.io/SAGCI-System/">Wenqiang Xu</a></span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="https://mvig.org/">Cewu Lu</a></span>
+						</center>
+					</td>
+				</tr>
+			</table>
+			<br>
 			<table align=center width=250px>
 				<tr>
 					<td align=center width=120px>
 						<center>
-							<span style="font-size:24px"><a href=''>[Paper]</a></span>
+							<span style="font-size:24px"><a href='https://arxiv.org/abs/2111.14693'>[ArXiv]</a></span>
 						</center>
 					</td>
 					<td align=center width=120px>
 						<center>
-							<span style="font-size:24px"><a href='https://github.com/richzhang/webpage-template'>[GitHub]</a></span><br>
+							<span style="font-size:24px"><a href='./resources/sagci_system_supp.pdf'>[Supp]</a></span><br>
+						</center>
+					</td>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:24px"><a href='./resources/bibtex.txt'>[Bibtex]</a></span><br>
 						</center>
 					</td>
 				</tr>
@@ -181,18 +211,18 @@
 			<tr>
 				<td width=260px>
 					<center>
-						<img class="round" style="width:500px" src="./resources/teaser.png"/>
+						<img class="round" style="width:1000px" src="./resources/teaser.png"/>
 					</center>
 				</td>
 			</tr>
 		</table>
-		<table align=center width=850px>
+		<!-- <table align=center width=850px>
 			<tr>
 				<td>
 					This was a template originally made for <a href="http://richzhang.github.io/colorization/">Colorful Image Colorization</a>. The code can be found in this <a href="https://github.com/richzhang/webpage-template">repository</a>.
 				</td>
 			</tr>
-		</table>
+		</table> -->
 	</center>
 
 	<hr>
@@ -201,19 +231,21 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
-				This is my abstract.
+				<center>
+				Building general-purpose robots to perform a diverse range of tasks in a large variety of environments in the physical world at the human level is extremely challenging. It requires the robot learning to be sample-efficient, generalizable, compositional, and incremental. In this work, we introduce a systematic learning framework called SAGCI-system towards achieving these above four requirements. Our system first takes the raw point clouds gathered by the camera mounted on the robot's wrist as the inputs and produces initial modeling of the surrounding environment represented as a file of Unified Robot Description Format (URDF). Our system adopts a learning-augmented differentiable simulation that loads the URDF. The robot then utilizes the interactive perception to interact with the environment to online verify and modify the URDF. Leveraging the differentiable simulation, we propose a model-based learning algorithm combining object-centric and robot-centric stages to efficiently produce policies to accomplish manipulation tasks. We apply our system to perform articulated object manipulation tasks, both in the simulation and the real world. Extensive experiments demonstrate the effectiveness of our proposed learning framework. 
+				</center>
 			</td>
 		</tr>
 	</table>
 	<br>
 
 	<hr>
-	<center><h1>Talk</h1></center>
+	<center><h1>Video</h1></center>
 	<p align="center">
-		<iframe width="660" height="395" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
+		<iframe width="660" height="395" src="https://www.youtube.com/watch?v=V3rcTVBktec" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
 	</p>
 
-	<table align=center width=800px>
+	<!-- <table align=center width=800px>
 		<br>
 		<tr>
 			<center>
@@ -222,9 +254,9 @@
 			</center>
 		</tr>
 	</table>
-	<hr>
+	<hr> -->
 
-	<center><h1>Code</h1></center>
+	<!-- <center><h1>Code</h1></center>
 
 	<table align=center width=420px>
 		<center>
@@ -259,17 +291,17 @@
 			</center>
 		</span>
 	</table>
-	<br>
+	<br> -->
 	<hr>
 	<table align=center width=450px>
-		<center><h1>Paper and Supplementary Material</h1></center>
+		<center><h1>Paper</h1></center>
 		<tr>
 			<td><a href=""><img class="layered-paper-big" style="height:175px" src="./resources/paper.png"/></a></td>
-			<td><span style="font-size:14pt">F. Author, S. Author, T. Author.<br>
-				<b>Creative and Descriptive Paper Title.</b><br>
-				In Conference, 20XX.<br>
-				(hosted on <a href="">ArXiv</a>)<br>
-				<!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
+			<td><span style="font-size:14pt">
+				<b>SAGCI-System: Towards Sample-Efficient, Generalizable, Compositional, and Incremental Robot Learning.</b><br>
+				ICRA, 2022.<br>
+				(<a href="https://arxiv.org/pdf/2111.14693.pdf">ArXiv</a>)<br>
+				<!-- (<a href="https://arxiv.org/pdf/2111.14693.pdf">camera ready</a>)<br> -->
 				<span style="font-size:4pt"><a href=""><br></a>
 				</span>
 			</td>
@@ -277,13 +309,15 @@
 	</table>
 	<br>
 
-	<table align=center width=600px>
+
+
+	<!-- <table align=center width=600px>
 		<tr>
 			<td><span style="font-size:14pt"><center>
 				<a href="./resources/bibtex.txt">[Bibtex]</a>
 			</center></td>
 		</tr>
-	</table>
+	</table> -->
 
 	<hr>
 	<br>
